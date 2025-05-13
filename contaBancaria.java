@@ -1,5 +1,8 @@
 public class contaBancaria{
-        private int numConta;
+    //------------- ATRIBUTOS ------------------------------------------
+
+
+    private int numConta;
     private String tipoConta;
     private String dono;
     private double saldo;
@@ -108,12 +111,23 @@ System.out.println("Saque Realizado: " + valor);
     }
 
     public void pagarMensalidade() {
-        int taxa = 15;
-        if (saldo >= taxa) {
-            saldo -= taxa;
-        } else {
-            System.out.println("Saldo insuficiente para pagar a mensalidade.");
-        }
+     if(tipoConta.equals("CC")){
+         int taxa = 15;
+         if(saldo > taxa){
+             saldo -= taxa;
+             System.out.println("Tarifa mensal paga com sucesso!");
+         } else {
+             System.out.println("Saldo abaixo do valor da tarifa!");
+         }
+     } else if(tipoConta.equals("CP")){
+         int taxa = 20;
+         if(saldo > taxa){
+             saldo -= taxa;
+             System.out.println("Tarifa mensal paga com sucesso!");
+         } else {
+             System.out.println("Saldo abaixo do valor da tarifa!");
+         }
+     }
     }
 
     public void verificarStatus(){
