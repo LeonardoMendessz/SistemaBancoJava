@@ -87,6 +87,7 @@ this.statusConta = statusConta;
     public void depositar(double valor) {
         if(statusConta){
         saldo += valor;
+        System.out.println("Deposito feito com sucesso!");
 } else{
 System.out.println("Erro ao depositar,Conta está fechada");
 }
