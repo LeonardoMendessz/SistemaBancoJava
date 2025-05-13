@@ -116,4 +116,12 @@ System.out.println("Saque Realizado: " + valor);
         }
     }
 
+    public void verificarStatus(){
+        if(statusConta = true){
+            System.out.println("Sua conta está aberta!");
+        } else {
+            System.out.println("Sua conta está fechada!");
+        }
+    }
+
 }

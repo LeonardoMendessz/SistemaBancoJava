@@ -67,7 +67,7 @@ public class SistemBanco {
                     break;
 
                 case 7:
-                    System.out.println(c1.isStatusConta());
+                    c1.verificarStatus();
                     break;
 
                 case 0:
